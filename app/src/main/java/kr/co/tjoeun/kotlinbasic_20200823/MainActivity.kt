@@ -3,6 +3,7 @@ package kr.co.tjoeun.kotlinbasic_20200823
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         makeLogBtn.setOnClickListener {
 
             Log.d("로그남기기버튼눌림","로그남기기버튼눌림")
+        }
+
+        toastBtn.setOnClickListener {
+//            사용자에게 "버튼이 눌림" 안내 문구 제공
+            Toast.makeText(this,"버튼이 눌림", Toast.LENGTH_SHORT).show()
         }
 
     }
