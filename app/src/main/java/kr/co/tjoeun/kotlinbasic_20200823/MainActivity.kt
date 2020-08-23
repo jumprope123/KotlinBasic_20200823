@@ -29,5 +29,14 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"버튼이 눌림", Toast.LENGTH_SHORT).show()
         }
 
+//        입력한 문구를 받아서 토스트로 출력하는 기능
+        contentToastBtn.setOnClickListener {
+//            contentEdt 의 문구 (text 속성 값) => (String) 받아서 => 코틀린 변수 저장
+            val inputContent = contentEdt.text.toString()
+//            변수에저장된 문구를 => 토스트의 재료로 사용
+            Toast.makeText(this,inputContent,Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 }
