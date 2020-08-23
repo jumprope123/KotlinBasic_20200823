@@ -38,4 +38,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력된 문구 토스트로 띄우기"/>
+
+    <EditText
+        android:id="@+id/messageEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="텍스트뷰에 반영할 문구를 적기"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/changeTextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="하단의 택스트 뷰의 문구를 변경하는 버튼"/>
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="변경될 텍스트 뷰"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:textColor="#000000"/>
 </LinearLayout>
